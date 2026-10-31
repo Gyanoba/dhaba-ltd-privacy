@@ -36,7 +36,7 @@
 <body>
 <main>
 <h1>Dhaba Ltd Privacy Policy</h1>
-<p class="meta">Effective 31 October 2026 · Gyanoba</p>
+<p class="meta">Effective 1 November 2026 · Gyanoba</p>
 
 <p>This policy explains what information the mobile game <strong>Dhaba Ltd</strong> (Android package
 <code>com.gyanoba.games.dhaba</code>, "the game") collects, why, and what you can do about it. The game is made by
@@ -46,23 +46,56 @@
 <div class="summary">
 <h3>In short</h3>
 <ul>
-  <li>You don't need an account, and the game never asks for your name, email, phone number, contacts, photos or precise location.</li>
+  <li>You can play without an account. Signing in with Google is optional and only used to keep your progress in the cloud.</li>
+  <li>The game never asks for your phone number, contacts, photos or precise location.</li>
   <li>The game has no ads and no in-app purchases.</li>
-  <li>Your progress and settings are saved only on your phone.</li>
+  <li>Your progress and settings are saved on your phone. If you sign in with Google, a copy is also kept in the cloud so you can move it to another phone.</li>
   <li>To fix crashes, improve the game and update its content, the game sends usage and crash data to Google Firebase. It is tied to random device identifiers, not to your name.</li>
+  <li>You can delete your account and cloud save at any time from inside the game (<a href="#delete-account">how</a>).</li>
   <li>We never sell your data or use it for advertising.</li>
 </ul>
 </div>
 
 <h2>1. Information stored on your device</h2>
 <p>Your game progress (restaurants, upgrades, coins and gems, story progress) and settings (language, sound,
-graphics, controls) are saved in a file on your phone. We don't receive this file. Uninstalling the game, clearing
-its data, or using <strong>Settings → Reset progress</strong> in the game deletes it.</p>
+graphics, controls) are saved in a file on your phone. If you don't sign in, we never receive this file.
+Uninstalling the game, clearing its data, or using <strong>Settings → Reset progress</strong> in the game deletes it.</p>
 
-<h2>2. Information collected through Google Firebase</h2>
-<p>The game uses three Firebase services from Google LLC. Firebase collects the information below automatically
-when you play. None of it includes your name or contact details, but it is linked to random identifiers for your
-device or installation, so the law treats it as personal data.</p>
+<h2>2. Google sign-in and cloud save (optional)</h2>
+<p>You can sign in with your Google account to keep your progress in the cloud and carry it to a new phone or a
+reinstall. Signing in is never required, nothing in the game is locked behind it, and the game plays the same
+without it. If you choose to sign in, the game uses Google sign-in on Android and two Firebase services from Google
+LLC:</p>
+<div class="table-wrap">
+<table>
+<tr><th>Service</th><th>What it stores</th><th>Why</th></tr>
+<tr>
+  <td><strong>Firebase Authentication</strong></td>
+  <td>Your Google account's name, email address and profile picture link, your Google account ID, and a Firebase
+  user ID created for you. Firebase also records the IP address and device details of each sign-in to protect
+  accounts from abuse.</td>
+  <td>To know which cloud save is yours.</td>
+</tr>
+<tr>
+  <td><strong>Cloud Firestore</strong></td>
+  <td>A copy of your game save (progress, coins and gems, story progress, and the settings that follow you: sound,
+  music, vibration, controls and language), a short progress summary (restaurants finished, fame, stars, gems, current
+  place), the app version, a random installation ID, and when it was last saved. A second record keeps your name,
+  email address, Google account ID and when you last signed in.</td>
+  <td>To restore your progress on another phone, and to ask which save to keep when two phones have different
+  progress.</td>
+</tr>
+</table>
+</div>
+<p>Graphics, text size and camera settings stay on each phone and are not uploaded. Once you have signed in on a
+phone, the game may sign you in again automatically after a reinstall, so it can offer to load your progress; Android
+shows you when this happens. Your cloud save can be read and changed only by you, signed in to your own account.</p>
+
+<h2>3. Usage and crash data collected through Google Firebase</h2>
+<p>Whether or not you sign in, the game uses three more Firebase services. They collect the information below
+automatically when you play. None of it includes your name or contact details, and we do not link it to your Google
+account, but it is linked to random identifiers for your device or installation, so the law treats it as personal
+data.</p>
 
 <div class="table-wrap">
 <table>
@@ -93,13 +126,14 @@ information from Google Play (how you found and installed the game); device mode
 </table>
 </div>
 
-<p>We do not link this information to your identity, and we do not combine it with data from other apps or
-websites. The game itself does not show ads and does not use the advertising ID for advertising; Firebase may read it
+<p>We do not link this information to your identity or your Google sign-in, and we do not combine it with data from
+other apps or websites. The game itself does not show ads and does not use the advertising ID for advertising; Firebase may read it
 as part of its standard analytics.</p>
 
-<h2>3. How we share information</h2>
+<h2>4. How we share information</h2>
 <ul>
-  <li><strong>Google</strong> processes the information above for us, as our service provider, under the
+  <li><strong>Google</strong> processes the information above, including your sign-in details and cloud save, for us,
+  as our service provider, under the
   <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a>. See
   <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> and the
   <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
@@ -107,7 +141,7 @@ as part of its standard analytics.</p>
   <li>We don't sell, rent or trade information to anyone, and we don't share it for advertising.</li>
 </ul>
 
-<h2>4. Where it is stored and for how long</h2>
+<h2>5. Where it is stored and for how long</h2>
 <p>Firebase stores data on Google servers, which may be outside your country, including in the United States.
 Transfers of data from the EU, EEA or UK are covered by the Standard Contractual Clauses in the Firebase data
 processing terms.
@@ -116,41 +150,56 @@ Information is sent over encrypted connections (HTTPS).</p>
   <li>Analytics event data is kept for up to 14 months, then deleted automatically.</li>
   <li>Crash reports are kept for 90 days.</li>
   <li>The random installation identifiers stay until you uninstall the game or clear its data.</li>
+  <li>Your account details and cloud save stay until you delete your account. <strong>Settings → Reset
+  progress</strong> deletes the cloud save too. Signing out keeps them, so you can sign in again later.</li>
   <li>Data on your phone stays until you delete the game or its data.</li>
 </ul>
 
-<h2>5. Your choices and rights</h2>
+<h2>6. Your choices and rights</h2>
 <ul>
   <li><strong>Reset or delete your advertising ID:</strong> Android <em>Settings → Privacy → Ads</em> (the name differs
   by phone).</li>
+  <li><strong>Don't sign in:</strong> the game works fully without an account, and you can sign out at any time in
+  <em>Settings → Cloud save</em>.</li>
   <li><strong>Delete your game data:</strong> uninstall the game, clear its storage, or use <em>Settings → Reset
   progress</em>.</li>
   <li><strong>Access, correction or deletion of collected data:</strong> email
-  <a href="mailto:hello@gyanoba.com">hello@gyanoba.com</a>. Because the data is not tied to your name, we may ask for
-  details (such as your phone model and when you played) to find it. We answer within 30 days.</li>
+  <a href="mailto:hello@gyanoba.com">hello@gyanoba.com</a>. For usage and crash data, which is not tied to your name,
+  we may ask for details (such as your phone model and when you played) to find it. We answer within 30 days.</li>
 </ul>
+
+<h3 id="delete-account">Deleting your account and cloud save</h3>
+<p><strong>In the game:</strong> open <em>Settings → Cloud save → Delete account</em> and confirm. This deletes your
+cloud save, your account record and your sign-in at once. The progress on your phone stays, so you can keep playing
+without an account.</p>
+<p><strong>Without the game</strong> (for example if you no longer have it installed): email
+<a href="mailto:hello@gyanoba.com?subject=Delete%20my%20Dhaba%20Ltd%20account">hello@gyanoba.com</a> from the Google
+account you signed in with, with the subject "Delete my Dhaba Ltd account". We delete the account, the cloud save and
+the sign-in record within 30 days and reply when it is done. Usage and crash data is not linked to your account; it is
+deleted on the schedule above, or sooner if you ask.</p>
 <p>Depending on where you live, laws such as India's Digital Personal Data Protection Act, 2023, the EU and UK
 General Data Protection Regulation, and US state privacy laws give you rights to access, correct and erase your
 personal data, to object to its use, to nominate someone to act for you (India), and to complain to a data protection
 authority (in India, the Data Protection Board of India). We use analytics and crash data to keep the game working
-and to improve it. The game does not show a consent prompt: you can limit the advertising ID in your device settings
-at any time, and ask us to delete collected data by writing to us.</p>
+and to improve it, and your sign-in details and cloud save only because you chose to sign in. The game does not show
+a consent prompt for usage data: you can limit the advertising ID in your device settings at any time, and ask us to
+delete collected data by writing to us.</p>
 
-<h2>6. Children</h2>
+<h2>7. Children</h2>
 <p>The game is meant for a general audience aged 13 and over, and it is not directed at children under 13. We do not
 knowingly collect personal information from children. If you believe a child under 13 has used the game and you want
 any data about them deleted, contact us and we will delete it. In India, players under 18 should play with the
 permission of a parent or guardian. We do not use anyone's data for advertising or targeted tracking.</p>
 
-<h2>7. Changes to this policy</h2>
-<p>If the game starts collecting different information (for example if we add accounts, cloud saves or purchases),
+<h2>8. Changes to this policy</h2>
+<p>If the game starts collecting different information (for example if we add purchases or other sign-in options),
 we will update this page and change the date at the top before that version of the game is released.</p>
 
-<h2>8. Contact</h2>
+<h2>9. Contact</h2>
 <p>Gyanoba, India · <a href="mailto:hello@gyanoba.com">hello@gyanoba.com</a><br>
 This address is also our grievance contact under India's Digital Personal Data Protection Act, 2023.</p>
 
-<footer>Dhaba Ltd · Privacy Policy · Effective 31 October 2026</footer>
+<footer>Dhaba Ltd · Privacy Policy · Effective 1 November 2026</footer>
 </main>
 </body>
 </html>
